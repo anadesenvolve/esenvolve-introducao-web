@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus filmes Favoritos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .movie {
+            text-align: center;
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .movie img:hover {
+            transform: scale(1.05);
+        }
+        .movie p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Filmes Favoritos</h1>
+
+    <div class="container">
+        <div class="movie">
+            <a href="https://pt.wikipedia.org/wiki/A_Princesa_e_o_Sapo">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/f/fb/The_Princess_and_the_Frog_p%C3%B4ster.jpg" alt="A Princesa e o Sapo">
+                <p>A Princesa e o Sapo</p>
+            </a>
+        </div>
+        <div class="movie">
+            <a href="https://pt.wikipedia.org/wiki/Shutter_Island">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/2/2d/Shutter_island_poster_promocional.png" alt="A Ilha do Medo">
+                <p>A Ilha do Medo</p>
+            </a>
+        </div>
+        <div class="movie">
+            <a href="https://en.wikipedia.org/wiki/The_Platform_(film)">
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/54/The_Platform_poster.jpg" alt="O Poço">
+                <p>O Poço</p>
+            </a>
+        </div>
+        <div class="movie">
+            <a href="https://pt.wikipedia.org/wiki/Inside_Out_(filme_de_2015)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/f/f6/Inside_Out_%28filme%29.jpg" alt="Divertidamente">
+                <p>Divertidamente</p>
+            </a>
+        </div>
+        <div class="movie">
+            <a href="https://pt.wikipedia.org/wiki/Fragmentado_(filme)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/d/d4/Split_%28filme%29.jpg" alt="Fragmentado">
+                <p>Fragmentado</p>
+            </a>
+        </div>
+        <div class="movie">
+            <a href="https://pt.wikipedia.org/wiki/Homem-Aranha_(filme)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/1/14/Spide-Man_Poster.jpg" alt="Homem-Aranha">
+                <p>Homem-Aranha</p>
+            </a>
+    </div>
+</body>
+</html>
