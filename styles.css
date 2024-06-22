@@ -1,0 +1,161 @@
+/* Definindo fontes */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+/* Paleta de cores */
+:root {
+    --cor-principal: #2c3e50;
+    --cor-secundaria: #ecf0f1;
+    --cor-destaque: #e74c3c;
+}
+
+/* Estilos gerais */
+body {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+header, nav, section, footer {
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Contraste de cores no rodapé */
+footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Estilização do menu */
+nav {
+    background-color: var(--cor-destaque);
+    color: var(--cor-secundaria);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+/* Apresentação vertical */
+header {
+    text-align: center;
+    padding-top: 80px; /* Espaço para o menu fixo */
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* Estilização das seções */
+section {
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-principal);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid var(--cor-principal);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilização das listas de habilidades */
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    header, section {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
